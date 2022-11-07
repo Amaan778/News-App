@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="315dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="11dp"
+        app:cardCornerRadius="9dp"
+        android:layout_margin="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:text="Yankees pitcher Luis Severino unhappy after getting place on injured list"
+                android:textSize="20dp"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="5"
+                    android:layout_weight="1"
+                    android:text="Description"
+                    android:layout_margin="5dp"
+                    android:id="@+id/Description"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:id="@+id/image"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Published at"
+                android:textSize="20dp"
+                android:id="@+id/author"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Published at"
+                android:textSize="20dp"
+                android:id="@+id/link"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
